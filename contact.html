@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Revenue Dynamics Advisors</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand"><a href="index.html">Revenue Dynamics Advisors</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="startup-solutions.html">Startup Solutions</a>
+        <a href="calculators.html">Calculators</a>
+        <a href="blog/index.html">Blog/Articles</a>
+        <a href="news.html">News & Updates</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <h2>Contact</h2>
+    <p><strong>Phone:</strong> <a href="tel:9710675224">9710675224</a></p>
+    <p><strong>Email:</strong> <a href="mailto:sampleemail@xyx.com">sampleemail@xyx.com</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919710675224" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+
+    <h3>Quick message</h3>
+    <form id="contactForm" onsubmit="return submitForm(event)">
+      <label>Your name</label><input required id="name" />
+      <label>Your email</label><input required id="email" type="email" />
+      <label>Message</label><textarea required id="message"></textarea>
+      <button type="submit" class="btn primary">Send</button>
+    </form>
+    <p id="formStatus"></p>
+    <p class="muted">This form opens your email app. For an online form backend, a service can be added later.</p>
+  </main>
+
+  <script>
+  function submitForm(e){
+    e.preventDefault();
+    var name=document.getElementById('name').value;
+    var email=document.getElementById('email').value;
+    var msg=document.getElementById('message').value;
+    var body=encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nMessage: '+msg);
+    window.location.href='mailto:sampleemail@xyx.com?subject=Website%20Contact&body='+body;
+    document.getElementById('formStatus').innerText='Opening your email app...';
+    return false;
+  }
+  </script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Revenue Dynamics Advisors</p>
+      <p>Phone: <a href="tel:9710675224">9710675224</a> · Email: <a href="mailto:sampleemail@xyx.com">sampleemail@xyx.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
