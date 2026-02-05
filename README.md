@@ -1,6 +1,6 @@
 # Revenue Dynamics Advisors — Website (GitHub Pages)
 
-Pages included: Home, About, Services, Startup Solutions, Calculators, Blog/Articles, News & Updates, Contact.
+Pages included: Home, About, Services, Startup Solutions, Calculators, Blog/Articles, News & Updates, Write for Us, Contact.
 Calculators: Income Tax, GST, EMI (client-side JS).
 
 ## Deploy on GitHub Pages
